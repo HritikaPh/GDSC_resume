@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid lightgray; */
+    margin: 0;
+    padding : 0;
+  }
+
+  body {
+    margin: 0 auto;
+    width: 70vw;
+    justify-content: center;
+  }
+
+  header {
+    margin-top: 60px;
+    padding: 20px 0;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .menu_items {
+    height: 40px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+  }
+
+  main {
+    overflow: hidden;
+  }
+
+  .resume_form_container {}
+
+  #form_wrapper {
+    display: flex;
+    width: 350vw;
+    transition: all 1s ease-in-out;
+  }
+
+  .form_section {
+    width: 70vw;
+    position: relative;
+  }
+
+  .section_wrapper {}
+
+  #personal_details,
+  #education,
+  #experience,
+  #projects,
+  #extra {}
+
+
+  .row1,
+  .row2,
+  .row3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px;
+  }
+
+  .row1>*,
+  .row2>*,
+  .row3>* {
+    flex: 3;
+  }
+
+  input {
+    height: 50px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+  }
+
+  .checkbox_label {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .row1>input,
+  .row2>textarea,
+  .row3>textarea {
+    flex: 10;
+    resize: vertical;
+    border: 1px solid lightgray;
+    padding: 15px;
+  }
+
+  button {
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px 0 #00000024, 0 1px 5px 0 #0000001f;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+
+  .button_add,
+  .button_remove {
+    width: 80px;
+    height: 50px;
+    font-weight: 900;
+    font-size: 18px;
+    color: white;
+    flex: 1 !important;
+  }
+
+  .button_add {
+    background-color: rgb(0, 189, 0);
+  }
+
+  .button_remove {
+    background-color: red;
+  }
+
+  .button_back,
+  .button_next,
+  .submit {
+    height: 40px;
+    padding: 12px 16px;
+    margin: 40px 12px;
+  }
+
+  .button_back {
+    border: 1px solid gray;
+    background-color: white;
+  }
+
+  .button_next {
+    color: white;
+    border: 1px solid gray;
+    background-color: #2196f3;
+  }
+
+  .submit {
+    color: white;
+    border: 1px solid gray;
+    background-color: rgb(255, 153, 0);
+  }
+
+  .active {
+    background-color: #2196f3;
+    color: white;
+  }

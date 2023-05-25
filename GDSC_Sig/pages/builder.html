@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>GDSC PICT Resume Builder - Build your perfect resume today!</title>
+  <link rel="stylesheet" href="../styles/builder.styles.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1>Let's create your resume!</h1>
+    <p>Fill in the details to get started.</p>
+  </header>
+
+  <nav>
+    <h3 class="menu_items active">Personal Details</h3>
+    <h3 class="menu_items">Education</h3>
+    <h3 class="menu_items">Experience</h3>
+    <h3 class="menu_items">Projects</h3>
+    <h3 class="menu_items">Hobbies / Achievements</h3>
+  </nav>
+
+  <main>
+    <form action="" method="post">
+
+      <div class="resume_form_container">
+        <div id="form_wrapper">
+
+          <div id="personal_details" class="form_section">
+            <div class="row1">
+              <input type="text" id="first_name" name="first_name" placeholder="First Name *">
+              <input type="text" id="last_name" name="last_name" placeholder="Last Name *">
+              <input type="text" id="title" name="title" placeholder="Title">
+            </div>
+
+            <div class="row2">
+              <input type="text" id="email" name="email" placeholder="Email *">
+              <input type="text" id="phone" name="phone" placeholder="Phone">
+              <input type="text" id="location" name="location" placeholder="Location">
+            </div>
+
+            <div class="row3">
+              <input type="text" id="linkedin" name="linkedin" placeholder="Linkedin">
+              <input type="text" id="github" name="github" placeholder="Github">
+              <input type="text" id="portfolio" name="portfolio" placeholder="Portfolio">
+            </div>
+
+            <div class="row3">
+              <input type="text" id="skills" name="skills" placeholder="Skills">
+            </div>
+          </div>
+
+
+          <div id="education" class="form_section">
+            <div class="row1">
+              <input type="text" id="educational_institute" name="educational_institute"
+                placeholder="School/College/University *">
+              <input type="text" id="degree" name="degree" placeholder="Degree *">
+              <input type="text" id="discipline" name="discipline" placeholder="Discipline *">
+            </div>
+
+            <div class="row2">
+              <input type="text" id="score" name="score" placeholder="Marks/Percentage/CGPA *">
+              <input type="date" name="education_from" id="education_from" placeholder="From *">
+              <input type="date" name="education_to" id="education_to" placeholder="To *">
+              <button type="button" class="button_add button_add_education"> + </button>
+              <button type="button" class="button_remove button_remove_education"> - </button>
+            </div>
+          </div>
+
+
+          <div id="experience" class="form_section">
+            <div class="row1">
+              <input type="text" id="organization" name="organization" placeholder="Organization *">
+              <input type="text" id="position" name="position" placeholder="Position *">
+            </div>
+
+            <div class="row2">
+              <input type="date" name="experience_from" id="experience_from" placeholder="From *">
+              <input type="date" name="experience_to" id="experience_to" placeholder="To *">
+              <label class="checkbox_label">
+                <input type="checkbox" name="organization_present" id="organization_present"
+                  value="isCurrentOrganization">
+                Present Organization
+              </label>
+            </div>
+
+            <div class="row3">
+              <textarea name="experience_details" id="experience_details" placeholder="Experience Details" cols="30"
+                rows="10"></textarea>
+              <button type="button" class="button_add button_add_experience"> + </button>
+              <button type="button" class="button_remove button_remove_experience"> - </button>
+            </div>
+          </div>
+
+
+          <div id="projects" class="form_section">
+            <div class="row1">
+              <input type="text" id="title" name="title" placeholder="Title *">
+              <input type="text" id="link" name="link" placeholder="Link *">
+            </div>
+
+            <div class="row2">
+              <textarea name="project_description" id="project_description" placeholder="Project Description" cols="30"
+                rows="10"></textarea>
+              <button type="button" class="button_add button_add_project"> + </button>
+              <button type="button" class="button_remove button_remove_project"> - </button>
+            </div>
+          </div>
+
+
+          <div id="extra" class="form_section">
+            <div class="row1">
+              <input type="text" id="extra_curricular" name="extra_curricular"
+                placeholder="Hobbies/Achievements/Extra Curricular">
+              <button type="button" class="button_add button_add_hobby"> + </button>
+              <button type="button" class="button_remove button_remove_hobby"> - </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <button type="button" class="button_back"> &lt; Back </button>
+      <button type="button" class="button_next"> Next &gt; </button>
+      <button type="submit" class="submit">Submit</button>
+
+    </form>
+  </main>
+
+  <script src="../scripts/builder.scripts.js"></script>
+
+</body>
+
+</html>
